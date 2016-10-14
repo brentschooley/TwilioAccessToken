@@ -1,10 +1,10 @@
-public struct ConversationsGrant: Grant {
+public struct VideoGrant: Grant {
   public var configurationProfileSid: String?
-    
+  
   public var grantKey: String {
-    return "rtc"
+    return "video"
   }
-
+  
   public var payload: [String:Any] {
     var payloadValues: [String:String] = [:]
     
