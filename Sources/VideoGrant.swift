@@ -1,6 +1,10 @@
 public struct VideoGrant: Grant {
   public var configurationProfileSid: String?
   
+  public init() {
+    
+  }
+  
   public var grantKey: String {
     return "video"
   }

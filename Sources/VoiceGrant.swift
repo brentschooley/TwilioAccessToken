@@ -4,6 +4,10 @@ public struct VoiceGrant: Grant {
   public var pushCredentialsSid: String?
   public var endpointId: String?
   
+  public init() {
+    
+  }
+  
   public var grantKey: String {
     return "voice"
   }

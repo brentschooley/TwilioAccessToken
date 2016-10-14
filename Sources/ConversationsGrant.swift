@@ -1,5 +1,9 @@
 public struct ConversationsGrant: Grant {
   public var configurationProfileSid: String?
+  
+  public init() {
+    
+  }
     
   public var grantKey: String {
     return "rtc"

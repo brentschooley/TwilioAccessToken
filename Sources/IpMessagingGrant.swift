@@ -12,6 +12,10 @@ public struct IpMessagingGrant: Grant {
   }
 */
   
+  public init() {
+    
+  }
+  
   public var grantKey: String {
     return "ip_messaging"
   }
