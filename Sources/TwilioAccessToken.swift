@@ -1,7 +1,7 @@
 import Foundation
 import JWT
 
-struct TwilioAccessToken {
+public struct TwilioAccessToken {
   var signingKeySid: String
   var accountSid: String
   var secret: String

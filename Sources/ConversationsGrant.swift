@@ -1,4 +1,4 @@
-struct ConversationsGrant: Grant {
+public struct ConversationsGrant: Grant {
   var grantKey: String {
     return "rtc"
   }

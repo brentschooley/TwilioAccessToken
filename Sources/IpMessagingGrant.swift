@@ -1,4 +1,4 @@
-struct IpMessagingGrant: Grant {
+public struct IpMessagingGrant: Grant {
   var serviceSid: String
   var endpointId: String
   var deploymentRoleSid: String?
