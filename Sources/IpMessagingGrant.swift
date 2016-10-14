@@ -4,7 +4,7 @@ public struct IpMessagingGrant: Grant {
   var deploymentRoleSid: String?
   var pushCredentialSid: String?
 
-  init(serviceSid: String, endpointId: String, deploymentRoleSid: String? = nil, pushCredentialSid: String? = nil) {
+  public init(serviceSid: String, endpointId: String, deploymentRoleSid: String? = nil, pushCredentialSid: String? = nil) {
     self.serviceSid = serviceSid
     self.endpointId = endpointId
     self.deploymentRoleSid = deploymentRoleSid

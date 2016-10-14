@@ -10,18 +10,18 @@ public struct TwilioAccessToken {
   var grants: [Grant] = []
   var nbf: Int?
 
-  init(signingKeySid: String, accountSid: String, secret: String, ttl: Int = 3600) {
+  public init(signingKeySid: String, accountSid: String, secret: String, ttl: Int = 3600) {
     self.signingKeySid = signingKeySid
     self.accountSid = accountSid
     self.secret = secret
     self.ttl = ttl
   }
 
-  mutating func addGrant(_ grant: Grant) {
+  public mutating func addGrant(_ grant: Grant) {
     self.grants.append(grant)
   }
 
-  func toJwt() -> String {
+  public func toJwt() -> String {
     let now = Int(Date().timeIntervalSince1970)
     let headers = ["cty": "twilio-fpa;v=1"]
 
