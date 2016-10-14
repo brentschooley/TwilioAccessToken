@@ -1,3 +1,4 @@
+import Foundation
 import JWT
 
 struct TwilioAccessToken {
@@ -16,7 +17,7 @@ struct TwilioAccessToken {
     self.ttl = ttl
   }
 
-  func addGrant(grant: Grant) {
+  mutating func addGrant(_ grant: Grant) {
     self.grants.append(grant)
   }
 
@@ -24,7 +25,7 @@ struct TwilioAccessToken {
     let now = Int(Date().timeIntervalSince1970)
     let headers = ["cty": "twilio-fpa;v=1"]
 
-    var grantPayload: [String:Any]
+    var grantPayload: [String:Any] = [:]
 
     if let identity = identity {
       grantPayload["identity"] = identity
@@ -34,7 +35,7 @@ struct TwilioAccessToken {
       grantPayload[grant.grantKey] = grant.payload
     }
 
-    var payload: [String:Any]
+    var payload: [String:Any] = [:]
     payload["jti"] = "\(self.signingKeySid)-\(now)"
     payload["iss"] = self.signingKeySid
     payload["sub"] = self.accountSid
@@ -47,7 +48,7 @@ struct TwilioAccessToken {
 
     let token = JWT.encode(
       payload,
-      additionalHeaders: ["cty": "twilio-fpa;v=1"],
+      additionalHeaders: headers,
       algorithm: .hs256(self.secret.data(using: .utf8)!)
     )
 
