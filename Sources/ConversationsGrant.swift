@@ -1,0 +1,3 @@
+struct ConversationsGrant: Grant {
+  
+}
