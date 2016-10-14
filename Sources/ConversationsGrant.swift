@@ -1,9 +1,9 @@
 public struct ConversationsGrant: Grant {
-  var grantKey: String {
+  public var grantKey: String {
     return "rtc"
   }
 
-  var payload: [String:Any] {
+  public var payload: [String:Any] {
     var payloadValues: [String:String] = [:]
 
     return payloadValues

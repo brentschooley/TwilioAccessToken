@@ -2,13 +2,13 @@ import Foundation
 import JWT
 
 public struct TwilioAccessToken {
-  var signingKeySid: String
-  var accountSid: String
-  var secret: String
-  var identity: String?
-  var ttl: Int
-  var grants: [Grant] = []
-  var nbf: Int?
+  public var signingKeySid: String
+  public var accountSid: String
+  public var secret: String
+  public var identity: String?
+  public var ttl: Int
+  public var grants: [Grant] = []
+  public var nbf: Int?
 
   public init(signingKeySid: String, accountSid: String, secret: String, ttl: Int = 3600) {
     self.signingKeySid = signingKeySid

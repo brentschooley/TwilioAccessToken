@@ -1,4 +1,4 @@
 public protocol Grant {
-  var grantKey: String { get }
-  var payload: [String:Any] { get }
+  public var grantKey: String { get }
+  public var payload: [String:Any] { get }
 }

@@ -1,8 +1,8 @@
 public struct IpMessagingGrant: Grant {
-  var serviceSid: String
-  var endpointId: String
-  var deploymentRoleSid: String?
-  var pushCredentialSid: String?
+  public var serviceSid: String
+  public var endpointId: String
+  public var deploymentRoleSid: String?
+  public var pushCredentialSid: String?
 
   public init(serviceSid: String, endpointId: String, deploymentRoleSid: String? = nil, pushCredentialSid: String? = nil) {
     self.serviceSid = serviceSid
@@ -11,11 +11,11 @@ public struct IpMessagingGrant: Grant {
     self.pushCredentialSid = pushCredentialSid
   }
 
-  var grantKey: String {
+  public var grantKey: String {
     return "ip_messaging"
   }
 
-  var payload: [String:Any] {
+  public var payload: [String:Any] {
     var payloadValues: [String:String] = [:]
 
     payloadValues["service_sid"] = self.serviceSid
