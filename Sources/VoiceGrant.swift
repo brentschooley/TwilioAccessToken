@@ -1,7 +1,7 @@
 public struct VoiceGrant: Grant {
   public var outgoingApplicationSid: String?
   public var outgoingApplicationParams: [String:String]?
-  public var pushCredentialsSid: String?
+  public var pushCredentialSid: String?
   public var endpointId: String?
   
   public init() {
@@ -26,8 +26,8 @@ public struct VoiceGrant: Grant {
       payloadValues["outgoing"] = outgoing
     }
     
-    if let pushCredentialsSid = self.pushCredentialsSid {
-      payloadValues["push_credential_sid"] = pushCredentialsSid
+    if let pushCredentialSid = self.pushCredentialSid {
+      payloadValues["push_credential_sid"] = pushCredentialSid
     }
     
     if let endpointId = self.endpointId {
