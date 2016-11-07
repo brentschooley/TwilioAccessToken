@@ -10,7 +10,7 @@ public struct TwilioAccessToken {
   public var grants: [Grant] = []
   public var nbf: Int?
 
-  public init(signingKeySid: String, accountSid: String, secret: String, ttl: Int = 3600) {
+  public init(accountSid: String, signingKeySid: String, secret: String, ttl: Int = 3600) {
     self.signingKeySid = signingKeySid
     self.accountSid = accountSid
     self.secret = secret
