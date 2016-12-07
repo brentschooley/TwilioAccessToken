@@ -27,7 +27,7 @@ public struct TwilioAccessToken {
 
     var grantPayload: [String:Any] = [:]
 
-    if let identity = identity {
+    if let identity = self.identity {
       grantPayload["identity"] = identity
     }
 
