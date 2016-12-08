@@ -4,7 +4,9 @@
 ![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20OS%20X-blue.svg)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
-> Swift library for creating [access tokens for Twilio SDKs](https://www.twilio.com/docs/api/rest/access-tokens).
+> Swift library for creating [access tokens for Twilio SDKs](https://www.twilio.com/docs/api/rest/access-tokens) from servers written in Swift.
+
+*DISCLAIMER:* Please do not use this directly in your iOS apps to generate tokens. Storing your Twilio credentials client-side is never a good idea.
 
 # Installation
 
