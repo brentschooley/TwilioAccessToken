@@ -74,7 +74,7 @@ Finally, you can return the [JWT](jwt.io) representation of the token:
 accessToken.toJWT()
 ```
 
-To read about how to use this in a [Vapor](https://vapor.codes) app, [read this blog post](https://twilio.com/blog).
+To read about how to use this in a [Vapor](https://vapor.codes) app, [read this blog post](https://www.twilio.com/blog/2016/12/how-to-use-swift-on-the-server-to-create-twilio-access-tokens-using-vapor.html).
 
 :gift_heart: Contributing
 ------------
