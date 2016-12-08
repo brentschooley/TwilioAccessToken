@@ -1,6 +1,6 @@
 # TwilioAccessToken
 
-
+[![Build Status](https://travis-ci.org/brentschooley/TwilioAccessToken.svg?branch=master)](https://travis-ci.org/brentschooley/TwilioAccessToken)
 ![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20OS%20X-blue.svg)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
