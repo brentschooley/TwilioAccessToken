@@ -6,7 +6,7 @@
 
 > Swift library for creating [access tokens for Twilio SDKs](https://www.twilio.com/docs/api/rest/access-tokens) from servers written in Swift.
 
-:warning: **DISCLAIMER:** Please do not use this directly in your iOS apps to generate tokens. Storing your Twilio credentials client-side is never a good idea. This library is intended for use with server-side Swift web frameworks like [Vapor](https://vapor.codes) or [Kitura](https://github.com/IBM-Swift/Kitura).
+:warning: **DISCLAIMER:** Please do not use this directly in your iOS apps to generate tokens. Storing your Twilio credentials client-side is never a good idea. This library is intended for use with server-side Swift web frameworks like [Vapor](https://vapor.codes) or [Kitura](https://github.com/IBM-Swift/Kitura). Read more about how to do this in [this blog post](https://www.twilio.com/blog/2016/12/how-to-use-swift-on-the-server-to-create-twilio-access-tokens-using-vapor.html).
 
 # Installation
 
